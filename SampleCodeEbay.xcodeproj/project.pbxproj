@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2892A9D49A28F9E89F2CCB10 /* libPods-SampleCodeEbay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8DC29451253BA3FA0107D7 /* libPods-SampleCodeEbay.a */; };
 		BEEA155C1CC07A4800891193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA155B1CC07A4800891193 /* main.m */; };
 		BEEA155F1CC07A4800891193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA155E1CC07A4800891193 /* AppDelegate.m */; };
-		BEEA15621CC07A4800891193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA15611CC07A4800891193 /* ViewController.m */; };
-		BEEA15651CC07A4800891193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEA15631CC07A4800891193 /* Main.storyboard */; };
+		BEEA15621CC07A4800891193 /* EQTabieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA15611CC07A4800891193 /* EQTabieViewController.m */; };
 		BEEA15671CC07A4800891193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEA15661CC07A4800891193 /* Assets.xcassets */; };
 		BEEA156A1CC07A4800891193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEA15681CC07A4800891193 /* LaunchScreen.storyboard */; };
 		BEEA15751CC07A4800891193 /* SampleCodeEbayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA15741CC07A4800891193 /* SampleCodeEbayTests.m */; };
 		BEEA15801CC07A4800891193 /* SampleCodeEbayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA157F1CC07A4800891193 /* SampleCodeEbayUITests.m */; };
+		BEEA15931CC0DC8F00891193 /* EarthQuakeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA15921CC0DC8F00891193 /* EarthQuakeDataModel.m */; };
+		BEEA15981CC1542C00891193 /* EQTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA15971CC1542C00891193 /* EQTableView.m */; };
+		BEEA159B1CC1646700891193 /* EQTableViewCell_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA159A1CC1646700891193 /* EQTableViewCell_iPhone.m */; };
+		BEEA159E1CC16FC500891193 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA159D1CC16FC500891193 /* API.m */; };
+		BEEA15A11CC19A7600891193 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA15A01CC19A7600891193 /* PersistencyManager.m */; };
+		BEEA15A41CC1A8A600891193 /* LibAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA15A31CC1A8A600891193 /* LibAPI.m */; };
+		BEEA15A71CC1E70900891193 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA15A61CC1E70900891193 /* MapViewController.m */; };
+		BEEA15AA1CC1F90100891193 /* EQTableViewCell_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEA15A91CC1F90100891193 /* EQTableViewCell_iPad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5BA5A4430ECF3D765D91AC08 /* Pods-SampleCodeEbay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleCodeEbay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleCodeEbay/Pods-SampleCodeEbay.debug.xcconfig"; sourceTree = "<group>"; };
+		8D8DC29451253BA3FA0107D7 /* libPods-SampleCodeEbay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleCodeEbay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D6B14EAA62E0FD85094472 /* Pods-SampleCodeEbay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleCodeEbay.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleCodeEbay/Pods-SampleCodeEbay.release.xcconfig"; sourceTree = "<group>"; };
 		BEEA15571CC07A4800891193 /* SampleCodeEbay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCodeEbay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEA155B1CC07A4800891193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEEA155D1CC07A4800891193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEEA155E1CC07A4800891193 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BEEA15601CC07A4800891193 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BEEA15611CC07A4800891193 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BEEA15641CC07A4800891193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEEA15601CC07A4800891193 /* EQTabieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EQTabieViewController.h; sourceTree = "<group>"; };
+		BEEA15611CC07A4800891193 /* EQTabieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EQTabieViewController.m; sourceTree = "<group>"; };
 		BEEA15661CC07A4800891193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEEA15691CC07A4800891193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEEA156B1CC07A4800891193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +61,22 @@
 		BEEA157B1CC07A4800891193 /* SampleCodeEbayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCodeEbayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEA157F1CC07A4800891193 /* SampleCodeEbayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleCodeEbayUITests.m; sourceTree = "<group>"; };
 		BEEA15811CC07A4800891193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEA15911CC0DC8F00891193 /* EarthQuakeDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthQuakeDataModel.h; sourceTree = "<group>"; };
+		BEEA15921CC0DC8F00891193 /* EarthQuakeDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthQuakeDataModel.m; sourceTree = "<group>"; };
+		BEEA15961CC1542C00891193 /* EQTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQTableView.h; sourceTree = "<group>"; };
+		BEEA15971CC1542C00891193 /* EQTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQTableView.m; sourceTree = "<group>"; };
+		BEEA15991CC1646700891193 /* EQTableViewCell_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQTableViewCell_iPhone.h; sourceTree = "<group>"; };
+		BEEA159A1CC1646700891193 /* EQTableViewCell_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQTableViewCell_iPhone.m; sourceTree = "<group>"; };
+		BEEA159C1CC16FC500891193 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		BEEA159D1CC16FC500891193 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
+		BEEA159F1CC19A7500891193 /* PersistencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistencyManager.h; sourceTree = "<group>"; };
+		BEEA15A01CC19A7600891193 /* PersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
+		BEEA15A21CC1A8A600891193 /* LibAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibAPI.h; sourceTree = "<group>"; };
+		BEEA15A31CC1A8A600891193 /* LibAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibAPI.m; sourceTree = "<group>"; };
+		BEEA15A51CC1E70900891193 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		BEEA15A61CC1E70900891193 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		BEEA15A81CC1F90100891193 /* EQTableViewCell_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQTableViewCell_iPad.h; sourceTree = "<group>"; };
+		BEEA15A91CC1F90100891193 /* EQTableViewCell_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQTableViewCell_iPad.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2892A9D49A28F9E89F2CCB10 /* libPods-SampleCodeEbay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		048B2C22F80A7C7BB500D5E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BA5A4430ECF3D765D91AC08 /* Pods-SampleCodeEbay.debug.xcconfig */,
+				96D6B14EAA62E0FD85094472 /* Pods-SampleCodeEbay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BEEA154E1CC07A4800891193 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +121,8 @@
 				BEEA15731CC07A4800891193 /* SampleCodeEbayTests */,
 				BEEA157E1CC07A4800891193 /* SampleCodeEbayUITests */,
 				BEEA15581CC07A4800891193 /* Products */,
+				048B2C22F80A7C7BB500D5E2 /* Pods */,
+				D6D72F676DB83F075635D60E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +141,10 @@
 			children = (
 				BEEA155D1CC07A4800891193 /* AppDelegate.h */,
 				BEEA155E1CC07A4800891193 /* AppDelegate.m */,
-				BEEA15601CC07A4800891193 /* ViewController.h */,
-				BEEA15611CC07A4800891193 /* ViewController.m */,
-				BEEA15631CC07A4800891193 /* Main.storyboard */,
+				BEEA158F1CC07AC400891193 /* Model */,
+				BEEA158E1CC07ABD00891193 /* View */,
+				BEEA158D1CC07AA400891193 /* Controller */,
+				BEEA15901CC0DC2E00891193 /* API */,
 				BEEA15661CC07A4800891193 /* Assets.xcassets */,
 				BEEA15681CC07A4800891193 /* LaunchScreen.storyboard */,
 				BEEA156B1CC07A4800891193 /* Info.plist */,
@@ -140,6 +179,60 @@
 			path = SampleCodeEbayUITests;
 			sourceTree = "<group>";
 		};
+		BEEA158D1CC07AA400891193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA15601CC07A4800891193 /* EQTabieViewController.h */,
+				BEEA15611CC07A4800891193 /* EQTabieViewController.m */,
+				BEEA15A51CC1E70900891193 /* MapViewController.h */,
+				BEEA15A61CC1E70900891193 /* MapViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BEEA158E1CC07ABD00891193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA15961CC1542C00891193 /* EQTableView.h */,
+				BEEA15971CC1542C00891193 /* EQTableView.m */,
+				BEEA15991CC1646700891193 /* EQTableViewCell_iPhone.h */,
+				BEEA159A1CC1646700891193 /* EQTableViewCell_iPhone.m */,
+				BEEA15A81CC1F90100891193 /* EQTableViewCell_iPad.h */,
+				BEEA15A91CC1F90100891193 /* EQTableViewCell_iPad.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BEEA158F1CC07AC400891193 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA15911CC0DC8F00891193 /* EarthQuakeDataModel.h */,
+				BEEA15921CC0DC8F00891193 /* EarthQuakeDataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BEEA15901CC0DC2E00891193 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA15A21CC1A8A600891193 /* LibAPI.h */,
+				BEEA15A31CC1A8A600891193 /* LibAPI.m */,
+				BEEA159C1CC16FC500891193 /* API.h */,
+				BEEA159D1CC16FC500891193 /* API.m */,
+				BEEA159F1CC19A7500891193 /* PersistencyManager.h */,
+				BEEA15A01CC19A7600891193 /* PersistencyManager.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		D6D72F676DB83F075635D60E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D8DC29451253BA3FA0107D7 /* libPods-SampleCodeEbay.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEEA15841CC07A4800891193 /* Build configuration list for PBXNativeTarget "SampleCodeEbay" */;
 			buildPhases = (
+				E26A6857AEAB8BEB6FEB87B0 /* Check Pods Manifest.lock */,
 				BEEA15531CC07A4800891193 /* Sources */,
 				BEEA15541CC07A4800891193 /* Frameworks */,
 				BEEA15551CC07A4800891193 /* Resources */,
+				ABE6FEFE8C96438448113DDC /* Embed Pods Frameworks */,
+				AD0D2F7EB0D2C5932B148B8C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +341,6 @@
 			files = (
 				BEEA156A1CC07A4800891193 /* LaunchScreen.storyboard in Resources */,
 				BEEA15671CC07A4800891193 /* Assets.xcassets in Resources */,
-				BEEA15651CC07A4800891193 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,13 +360,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ABE6FEFE8C96438448113DDC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleCodeEbay/Pods-SampleCodeEbay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD0D2F7EB0D2C5932B148B8C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleCodeEbay/Pods-SampleCodeEbay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E26A6857AEAB8BEB6FEB87B0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BEEA15531CC07A4800891193 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEEA15621CC07A4800891193 /* ViewController.m in Sources */,
+				BEEA15A41CC1A8A600891193 /* LibAPI.m in Sources */,
+				BEEA159B1CC1646700891193 /* EQTableViewCell_iPhone.m in Sources */,
+				BEEA15931CC0DC8F00891193 /* EarthQuakeDataModel.m in Sources */,
+				BEEA15621CC07A4800891193 /* EQTabieViewController.m in Sources */,
+				BEEA15AA1CC1F90100891193 /* EQTableViewCell_iPad.m in Sources */,
+				BEEA15A11CC19A7600891193 /* PersistencyManager.m in Sources */,
+				BEEA15981CC1542C00891193 /* EQTableView.m in Sources */,
 				BEEA155F1CC07A4800891193 /* AppDelegate.m in Sources */,
+				BEEA15A71CC1E70900891193 /* MapViewController.m in Sources */,
+				BEEA159E1CC16FC500891193 /* API.m in Sources */,
 				BEEA155C1CC07A4800891193 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,14 +459,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BEEA15631CC07A4800891193 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEEA15641CC07A4800891193 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BEEA15681CC07A4800891193 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,6 +556,7 @@
 		};
 		BEEA15851CC07A4800891193 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BA5A4430ECF3D765D91AC08 /* Pods-SampleCodeEbay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SampleCodeEbay/Info.plist;
@@ -424,6 +568,7 @@
 		};
 		BEEA15861CC07A4800891193 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D6B14EAA62E0FD85094472 /* Pods-SampleCodeEbay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SampleCodeEbay/Info.plist;
@@ -498,6 +643,7 @@
 				BEEA15861CC07A4800891193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEEA15871CC07A4800891193 /* Build configuration list for PBXNativeTarget "SampleCodeEbayTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +652,7 @@
 				BEEA15891CC07A4800891193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEEA158A1CC07A4800891193 /* Build configuration list for PBXNativeTarget "SampleCodeEbayUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +661,7 @@
 				BEEA158C1CC07A4800891193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

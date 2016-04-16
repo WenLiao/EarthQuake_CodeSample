@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EQTabieViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //Setup window
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    //Loading rootViewController
+    EQTabieViewController *rootViewController = [[EQTabieViewController alloc] init];
+    self.window.rootViewController = rootViewController;
+    
     return YES;
 }
 
