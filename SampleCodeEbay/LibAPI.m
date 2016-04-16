@@ -39,12 +39,18 @@
     return _sharedInstance;
 }
 
-- (PersistencyManager *) getPersistencyManager {
-    return persistencyManager;
+- (void) querryEQDataResultHandler:(NSObject<NSURLSessionDataDelegate> *) vc{
+    [api getEQLists:vc];
 }
 
-- (void) querryEQDataVia:(NSObject<NSURLSessionDataDelegate> *) vc{
-    [api getEQLists:vc];
+- (void) appendingEQData:(NSArray *) eqData {
+    int i=0;
+    for (NSDictionary *dic in eqData) {
+        [persistencyManager addEQData:[EarthQuakeDataModel initWithAttributes:dic] atIndex:i++];
+        /*If we need to sync to server
+         API sync
+         */
+    }
 }
 
 - (NSArray *) getEQData {

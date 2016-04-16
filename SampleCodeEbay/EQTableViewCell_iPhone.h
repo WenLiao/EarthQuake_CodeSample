@@ -16,4 +16,5 @@
 @property(nonatomic, strong) UILabel *src;
 @property(nonatomic, strong) UILabel *magnitude;
 @property(nonatomic, strong) EarthQuakeDataModel *model;
+
 @end

@@ -11,6 +11,5 @@
 @interface EQTabieViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource,NSURLSessionDataDelegate>
 
 
-
 @end
 

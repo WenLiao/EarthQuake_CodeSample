@@ -10,13 +10,6 @@
 #import "PureLayout.h"
 @implementation EQTableViewCell_iPad
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 - (instancetype)init {
     self = [super init];
@@ -47,12 +40,12 @@
         self.lng.font = [UIFont systemFontOfSize:20.0];
         [self.contentView addSubview:self.lng];
         
-        [self loadiPhoneLayout];
+        [self loadiPadLayout];
     }
     return self;
 }
 
-- (void) loadiPhoneLayout{
+- (void) loadiPadLayout{
     [self.dateTime autoSetDimension:ALDimensionHeight toSize:20.0];
     ALEdgeInsets defInsets = ALEdgeInsetsMake(10,10,10,10);
     [self.dateTime autoPinEdgesToSuperviewEdgesWithInsets:defInsets excludingEdge:ALEdgeBottom];

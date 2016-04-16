@@ -32,7 +32,7 @@
     [super viewDidLoad];
     
     //Requesting Data
-    [[LibAPI sharedInstance] querryEQDataVia:self];
+    [[LibAPI sharedInstance] querryEQDataResultHandler:self];
     
     //Setup TableView
     CGRect screenRect = [[UIScreen mainScreen] bounds];
@@ -41,8 +41,8 @@
     self.tableView.dataSource = self;
     self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
     self.tableView.rowHeight = 100;
+    [self.tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
     
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
@@ -60,6 +60,7 @@
     
     static NSString *identifier = @"Cell";
     EQTableViewCell_iPhone *cell;
+    
     if(IPAD) {
         cell = (EQTableViewCell_iPad *)[tableView dequeueReusableCellWithIdentifier:identifier];
         
@@ -75,7 +76,6 @@
             cell = [[EQTableViewCell_iPhone alloc] init];
         }
     }
-    
 
     NSInteger index = [indexPath row];
     EarthQuakeDataModel *model = eqData[index];
@@ -128,7 +128,7 @@ didReceiveResponse:(NSURLResponse *)response
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error {
     
     if (!error) {
-        [self dataToModel:receivedData];
+        [self savingDataToModel:receivedData];
     } else {
         NSLog(@"error:%@",error);
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Server Response Error" preferredStyle:UIAlertControllerStyleAlert];
@@ -141,15 +141,12 @@ didReceiveResponse:(NSURLResponse *)response
     
 }
 
-- (void) dataToModel:(NSData *) data {
+- (void) savingDataToModel:(NSData *) data {
     NSDictionary *jsonDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
     
-    NSArray *eqDatas = jsonDic[@"earthquakes"];
-    int i =0;
-    PersistencyManager *persistency = [[LibAPI sharedInstance] getPersistencyManager];
-    for (NSDictionary *dic in eqDatas) {
-        [persistency addEQData:[EarthQuakeDataModel initWithAttributes:dic] atIndex:i++];
-    }
+    NSArray *parsedData = jsonDic[@"earthquakes"];
+    LibAPI *libAPI = [LibAPI sharedInstance];
+    [libAPI appendingEQData:parsedData];
     
     eqData = [[LibAPI sharedInstance] getEQData];
     [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];

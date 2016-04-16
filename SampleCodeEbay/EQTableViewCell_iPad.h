@@ -12,4 +12,5 @@
 
 @property(nonatomic, strong) UILabel *lat;
 @property(nonatomic, strong) UILabel *lng;
+
 @end

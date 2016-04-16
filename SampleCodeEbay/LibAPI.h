@@ -12,8 +12,8 @@
 @interface LibAPI : NSObject
 
 + (LibAPI *) sharedInstance;
-- (void) querryEQDataVia:(NSObject<NSURLSessionDataDelegate> *) vc;
+- (void) querryEQDataResultHandler:(NSObject<NSURLSessionDataDelegate> *) vc;
+- (void) appendingEQData:(NSArray *) eqData;
 - (NSArray *) getEQData;
-- (PersistencyManager *) getPersistencyManager;
 
 @end

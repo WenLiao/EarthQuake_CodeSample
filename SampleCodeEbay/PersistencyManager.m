@@ -11,7 +11,6 @@
 
 @interface PersistencyManager () {
     NSMutableArray *EQData;
-    NSMutableData *receivedData;
 }
 @end
 
